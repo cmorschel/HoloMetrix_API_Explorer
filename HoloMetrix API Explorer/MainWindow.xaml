@@ -1,0 +1,28 @@
+﻿<Window x:Class="HoloMetrix_API_Explorer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HoloMetrix_API_Explorer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="279" Width="433.5" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Left" Width="214">
+        <StackPanel HorizontalAlignment="Left" Height="80" Margin="10,10,0,0" VerticalAlignment="Top" Width="200">
+            <Button Content="Connect using Device Picker" Click="Connect_DevicePicker"/>
+            <Button Content="Get Devices" Click="GetDevices"/>
+            <Button Content="Connect to Selected Device" Click="ConnectToDevice"/>
+            <Button Content="Launch HoloLens App" Click="LaunchApp"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Margin="10,95,0,0" Width="200" RenderTransformOrigin="0.5,0.5" Height="100" VerticalAlignment="Top">
+            <Button Content="Setup Measurment" Click="Setup"/>
+            <Button Content="Select Current Segment" Click="SelectSegment"/>
+            <Button Content="Set Results Gradient" Click="SetGradient"/>
+            <Button Content="Start Measurement" Click="StartMeasurement"/>
+            <Button Content="Set Segment Result" Click="SetResult"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="66" Margin="10,200,0,0" VerticalAlignment="Top" Width="200">
+            <Button Content="Send Status Message" Click="SendStatusMessages"/>
+        </StackPanel>
+        <Button Content="Connect, Launch and Setup" Click="ConnectLaunchSetup" Margin="215,10,-201,160"/>
+    </Grid>
+</Window>
